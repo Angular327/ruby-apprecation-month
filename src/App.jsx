@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css'
 
 function App() {
-  const countDownDate = new Date(2023, 9, 1).getTime();
+  const countDownDate = new Date('October 1, 2023 00:00:00 GMT-05:00').getTime();
 
   const [countDown, setCountDown] = useState(
     countDownDate - new Date().getTime()
